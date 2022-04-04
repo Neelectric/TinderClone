@@ -10,6 +10,7 @@ import Animated, {
   withSpring,
   runOnJS,
 } from 'react-native-reanimated';
+
 import {PanGestureHandler} from 'react-native-gesture-handler';
 import Like from '../../../TinderAssets/assets/images/LIKE.png';
 import Nope from '../../../TinderAssets/assets/images/nope.png';
