@@ -15,7 +15,7 @@ import {PanGestureHandler} from 'react-native-gesture-handler';
 import Like from '../../../TinderAssets/assets/images/LIKE.png';
 import Nope from '../../../TinderAssets/assets/images/nope.png';
 
-const ROTATION = 60;
+const ROTATION = 45;
 const SWIPE_VELOCITY = 800;
 
 const AnimatedStack = props => {
@@ -55,14 +55,14 @@ const AnimatedStack = props => {
         scale: interpolate(
           translateX.value,
           [-hiddenTranslateX, 0, hiddenTranslateX],
-          [1, 0.8, 1],
+          [1, 0.87, 1],
         ),
       },
     ],
     opacity: interpolate(
       translateX.value,
       [-hiddenTranslateX, 0, hiddenTranslateX],
-      [1, 0.5, 1],
+      [1, 0.75, 1],
     ),
   }));
 
@@ -143,13 +143,12 @@ const styles = StyleSheet.create({
   },
   animatedCard: {
     width: '90%',
-    height: '70%',
+    height: '80%',
     justifyContent: 'center',
     alignItems: 'center',
   },
   nextCardContainer: {
     ...StyleSheet.absoluteFillObject,
-
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -159,7 +158,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     zIndex: 1,
-    elevation: 1,
+    //elevation: 1,
+    backgroundColor: 'red',
   },
 });
 

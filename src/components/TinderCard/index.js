@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.36,
     shadowRadius: 6.68,
-
     elevation: 11,
   },
   image: {
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 10,
     overflow: 'hidden',
-
+    
     justifyContent: 'flex-end',
   },
   cardInner: {
