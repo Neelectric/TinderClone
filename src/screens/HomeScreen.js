@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Card from '../components/TinderCard';
 import users from '../../TinderAssets/assets/data/users';
 
@@ -26,25 +26,25 @@ const HomeScreen = () => {
     <View style={styles.pageContainer}>
       <AnimatedStack
         data={users}
-        renderItem={({item}) => <Card user={item} />}
+        renderItem={({ item }) => <Card user={item} />}
         onSwipeLeft={onSwipeLeft}
         onSwipeRight={onSwipeRight}
       />
       <View style={styles.icons}>
-          <View style={styles.button}>
-            <FontAwesome name="undo" size={botIconSize} color="#FBD88B" />
-          </View>
         <View style={styles.button}>
-        <Entypo name="cross" size={botIconSize} color="#F76C6B" />
+          <FontAwesome name="undo" size={botIconSize} color="#FBD88B" />
         </View>
         <View style={styles.button}>
-        <FontAwesome name="star" size={botIconSize} color="#3AB4CC" />
+          <Entypo name="cross" size={botIconSize} color="#F76C6B" />
         </View>
         <View style={styles.button}>
-        <FontAwesome name="heart" size={botIconSize} color="#4FCC94" />
+          <FontAwesome name="star" size={botIconSize} color="#3AB4CC" />
         </View>
         <View style={styles.button}>
-        <Ionicons name="flash" size={botIconSize} color="#A65CD2" />
+          <FontAwesome name="heart" size={botIconSize} color="#4FCC94" />
+        </View>
+        <View style={styles.button}>
+          <Ionicons name="flash" size={botIconSize} color="#A65CD2" />
         </View>
 
       </View>
@@ -67,13 +67,13 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   button: {
-      width: 50,
-      height: 50,
-      alignContent: 'center',
-      justifyContent: 'center',
-      backgroundColor: 'white',
-      padding: 10,
-      borderRadius: 50,
+    width: 50,
+    height: 50,
+    alignContent: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+    padding: 10,
+    borderRadius: 50,
   }
 
 });

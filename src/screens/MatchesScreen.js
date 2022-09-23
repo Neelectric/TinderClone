@@ -1,18 +1,18 @@
 import React from 'react';
-import {View, Text, StyleSheet, SafeAreaView, Image} from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, Image } from 'react-native';
 import users from '../../TinderAssets/assets/data/users';
 
 const MatchesScreen = () => {
   return (
     <SafeAreaView style={styles.root}>
       <View style={styles.container}>
-        <Text style={{fontWeight: 'bold', fontSize: 24, color: '#F63A6E'}}>
+        <Text style={{ fontWeight: 'bold', fontSize: 24, color: '#F63A6E' }}>
           New Matches
         </Text>
         <View style={styles.users}>
           {users.map(user => (
             <View style={styles.user} key={user.id}>
-              <Image source={{uri: user.image}} style={styles.image} />
+              <Image source={{ uri: user.image }} style={styles.image} />
             </View>
           ))}
         </View>
